@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-bg text-text font-body;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-bg;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-neon-primary hover:shadow-neon-primary hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-neon-secondary hover:shadow-neon-secondary hover:scale-105;
+  }
+
+  .btn-outline {
+    @apply border-2 border-accent text-accent hover:bg-accent hover:text-bg font-semibold py-3 px-6 rounded-xl transition-all duration-300 hover:shadow-neon;
+  }
+
+  .card-glass {
+    @apply bg-card/80 backdrop-blur-md border border-accent/20 rounded-2xl shadow-glass;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent via-primary to-secondary bg-clip-text text-transparent;
+  }
+
+  .neon-border {
+    @apply border border-accent shadow-neon;
+  }
+
+  .heading-xl {
+    @apply font-heading text-6xl md:text-8xl font-bold tracking-tight;
+  }
+
+  .heading-lg {
+    @apply font-heading text-4xl md:text-6xl font-bold tracking-tight;
+  }
+
+  .heading-md {
+    @apply font-heading text-3xl md:text-4xl font-bold tracking-tight;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 20px rgba(34, 211, 238, 0.3); }
+  100% { box-shadow: 0 0 30px rgba(34, 211, 238, 0.6); }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
