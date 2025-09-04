@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Instagram, TrendingUp, Users } from 'lucide-react'
+import { Instagram, TrendingUp } from 'lucide-react'
 import Button from '../ui/Button'
 import Badge from '../ui/Badge'
 import StatPill from '../ui/StatPill'

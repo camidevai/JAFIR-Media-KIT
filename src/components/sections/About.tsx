@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Video, Mic, Users, Award, Zap, Target } from 'lucide-react'
+import { Video, Mic, Users } from 'lucide-react'
 import RiseIn from '../motion/RiseIn'
 import ScaleIn from '../motion/ScaleIn'
 

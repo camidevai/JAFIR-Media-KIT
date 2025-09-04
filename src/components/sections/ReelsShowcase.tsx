@@ -40,7 +40,6 @@ const ReelsShowcase = () => {
               }`}
             >
               <ReelCard
-                thumbnail=""
                 views={reel.views}
                 title={reel.title}
                 className="h-full"

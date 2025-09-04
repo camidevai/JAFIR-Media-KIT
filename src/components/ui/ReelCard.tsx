@@ -2,13 +2,12 @@ import { motion } from 'framer-motion'
 import { Play, Eye } from 'lucide-react'
 
 interface ReelCardProps {
-  thumbnail: string
   views: string
   title?: string
   className?: string
 }
 
-const ReelCard = ({ thumbnail, views, title, className = '' }: ReelCardProps) => {
+const ReelCard = ({ views, title, className = '' }: ReelCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
