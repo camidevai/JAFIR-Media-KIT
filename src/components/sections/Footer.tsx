@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Instagram, Youtube, Heart } from 'lucide-react'
+import { Instagram, Heart } from 'lucide-react'
 import { Link } from 'react-scroll'
 
 const Footer = () => {
