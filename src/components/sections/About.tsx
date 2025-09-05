@@ -108,8 +108,12 @@ const About = () => {
               Cada sketch, cada interacción está pensada para generar conversación y ventas."
             </blockquote>
             <div className="flex items-center justify-center gap-4">
-              <div className="w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-full flex items-center justify-center text-bg font-bold text-xl">
-                JT
+              <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-accent">
+                <img
+                  src="https://subir-imagen.com/images/2025/09/04/Imagen-de-WhatsApp-2025-08-31-a-las-15.26.25_071b1460.jpg"
+                  alt="Jafir Torres"
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
               <div className="text-left">
                 <div className="font-semibold text-text">Jafir Torres</div>

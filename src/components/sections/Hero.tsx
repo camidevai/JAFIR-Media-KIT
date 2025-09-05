@@ -105,9 +105,12 @@ const Hero = () => {
                 
                 {/* Image container */}
                 <div className="relative bg-gradient-to-br from-card to-bg rounded-3xl p-8 neon-border">
-                  <div className="aspect-[3/4] bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl flex items-center justify-center">
-                    {/* Placeholder for user photo */}
-                    <div className="text-8xl font-heading text-gradient">JT</div>
+                  <div className="aspect-[3/4] bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl overflow-hidden">
+                    <img
+                      src="https://subir-imagen.com/images/2025/09/04/Imagen-de-WhatsApp-2025-08-31-a-las-15.26.25_071b1460.jpg"
+                      alt="Jafir Torres - Creador de contenido viral"
+                      className="w-full h-full object-cover object-center"
+                    />
                   </div>
                 </div>
               </div>

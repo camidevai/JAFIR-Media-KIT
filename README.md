@@ -94,4 +94,4 @@ await emailjs.send(
 
 ---
 
-**Desarrollado con ❤️ en Santiago, Chile**
+**Desarrollado con ❤️ por [www.camidevai.com](https://www.camidevai.com/?i=1#/contactame)**

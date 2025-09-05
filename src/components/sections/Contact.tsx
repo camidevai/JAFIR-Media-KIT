@@ -259,12 +259,24 @@ const Contact = () => {
               <div className="card-glass p-8">
                 <h4 className="text-xl font-bold text-text mb-4">Tiempo de respuesta</h4>
                 <p className="text-muted mb-4">
-                  Respondo todos los mensajes en menos de 24 horas. 
+                  Respondo todos los mensajes en menos de 24 horas.
                   Para proyectos urgentes, contáctame por WhatsApp.
                 </p>
-                <div className="flex items-center gap-2 text-accent">
+                <div className="flex items-center gap-2 text-accent mb-4">
                   <CheckCircle size={20} />
                   <span className="font-semibold">Respuesta garantizada en 24h</span>
+                </div>
+
+                <div className="border-t border-accent/20 pt-4">
+                  <p className="text-sm text-muted mb-2">¿Necesitas una landing page como esta?</p>
+                  <a
+                    href="https://www.camidevai.com/?i=1#/contactame"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent hover:text-primary transition-colors duration-300 text-sm font-medium"
+                  >
+                    Contacta al desarrollador →
+                  </a>
                 </div>
               </div>
             </div>

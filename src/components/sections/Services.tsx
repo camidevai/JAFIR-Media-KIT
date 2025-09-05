@@ -11,13 +11,13 @@ const Services = () => {
   const services = [
     {
       title: 'Sketch de humor + actuación',
-      price: 'CLP $80.000',
+      price: 'CLP $100.000',
       bullets: [
         'Guion corto a medida para tu marca',
         'Grabación profesional + edición',
         'Entrega en formato 9:16 y 1:1',
         'Revisiones incluidas',
-        'Entrega en 5-7 días hábiles'
+        'Entrega en 3-5 días hábiles'
       ],
       cta: 'Reservar Sketch',
       icon: <Camera size={32} />,
@@ -40,7 +40,22 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="py-20 relative">
+    <section id="services" className="py-20 relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <motion.div
+          initial={{ scale: 1.1 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1.5, ease: 'easeOut' }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"
+          style={{
+            backgroundImage: 'url(https://subir-imagen.com/images/2025/09/04/703dfcc7-b5e2-4dc2-a69e-b794a5ab27e5.jpg)'
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-bg/85 via-bg/70 to-bg/85" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5" />
+      </div>
+
       {/* Background elements */}
       <div className="absolute inset-0">
         <motion.div

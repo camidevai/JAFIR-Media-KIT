@@ -1,16 +1,9 @@
 import { motion } from 'framer-motion'
 import ReelCard from '../ui/ReelCard'
 import RiseIn from '../motion/RiseIn'
+import { reelsData } from '../../data/reels'
 
 const ReelsShowcase = () => {
-  const reels = [
-    { views: '1.4M', title: 'Pregunta incómoda en el mall' },
-    { views: '794K', title: 'Reto express con extraños' },
-    { views: '517.8K', title: 'Broma en el transporte público' },
-    { views: '297K', title: 'Interacción con vendedores' },
-    { views: '40K', title: 'Sketch en la calle' },
-    { views: '32K', title: 'Dinámica con público' }
-  ]
 
   return (
     <section id="reels" className="py-20 bg-gradient-to-b from-bg to-card/20">
@@ -25,23 +18,21 @@ const ReelsShowcase = () => {
           </p>
         </RiseIn>
 
-        {/* Masonry Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-          {reels.map((reel, index) => (
+        {/* Grid Uniforme 3x3 */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {reelsData.map((reel, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`${
-                index === 0 ? 'md:row-span-2' : 
-                index === 2 ? 'md:row-span-2' : ''
-              }`}
             >
               <ReelCard
                 views={reel.views}
                 title={reel.title}
+                thumbnail={reel.thumbnail}
+                url={reel.url}
                 className="h-full"
               />
             </motion.div>

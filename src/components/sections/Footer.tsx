@@ -22,12 +22,7 @@ const Footer = () => {
       ),
       handle: '@jafirtorres'
     },
-    {
-      name: 'YouTube',
-      href: 'https://youtube.com/@jafirtorres',
-      icon: <Youtube size={24} />,
-      handle: 'Jafir Torres'
-    }
+  
   ]
 
   const quickLinks = [
@@ -138,14 +133,22 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center gap-2 text-muted text-sm">
-            <span>Hecho con</span>
+            <span>Desarrollado con</span>
             <motion.div
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 1, repeat: Infinity }}
             >
               <Heart size={16} className="text-primary fill-current" />
             </motion.div>
-            <span>en Santiago, Chile</span>
+            <span>por</span>
+            <a
+              href="https://www.camidevai.com/?i=1#/contactame"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:text-primary transition-colors duration-300 font-semibold"
+            >
+              www.camidevai.com
+            </a>
           </div>
         </motion.div>
       </div>

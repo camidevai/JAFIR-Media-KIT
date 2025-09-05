@@ -4,22 +4,34 @@ import { Play, Eye } from 'lucide-react'
 interface ReelCardProps {
   views: string
   title?: string
+  thumbnail: string
+  url: string
   className?: string
 }
 
-const ReelCard = ({ views, title, className = '' }: ReelCardProps) => {
+const ReelCard = ({ views, title, thumbnail, url, className = '' }: ReelCardProps) => {
+  const handleClick = () => {
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       whileHover={{ scale: 1.05, rotateY: 5 }}
+      onClick={handleClick}
       className={`relative group cursor-pointer overflow-hidden rounded-2xl ${className}`}
     >
-      <div className="aspect-[9/16] bg-gradient-to-br from-card to-bg relative overflow-hidden">
-        {/* Placeholder for video thumbnail */}
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-          <div className="text-6xl font-heading text-gradient">JT</div>
+      <div className="aspect-[4/5] bg-gradient-to-br from-card to-bg relative overflow-hidden">
+        {/* Video thumbnail */}
+        <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20">
+          <img
+            src={thumbnail}
+            alt={title || "Reel viral de Jafir Torres"}
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
         </div>
         
         {/* Overlay */}
