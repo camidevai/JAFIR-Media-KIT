@@ -7,31 +7,31 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const testimonials = [
-    {
-      name: 'María González',
-      role: 'Marketing Manager, TechStart',
-      content: 'Jafir logró que nuestro producto fuera viral en TikTok. El ROI fue increíble, superamos las expectativas en un 300%.',
-      rating: 5
-    },
-    {
-      name: 'Carlos Mendoza',
-      role: 'CEO, LocalBrand',
-      content: 'Su humor auténtico conectó perfectamente con nuestro público objetivo. Las ventas aumentaron un 150% después de la campaña.',
-      rating: 5
-    },
-    {
-      name: 'Ana Rodríguez',
-      role: 'Directora Creativa, AgencyPro',
-      content: 'Profesional, creativo y con resultados medibles. Definitivamente volveremos a trabajar con él en futuras campañas.',
-      rating: 5
-    },
-    {
-      name: 'Diego Silva',
-      role: 'Founder, FoodTruck Unidos',
-      content: 'El sketch que hizo para nosotros se volvió viral y triplicó nuestras ventas esa semana. ¡Increíble trabajo!',
-      rating: 5
-    }
-  ]
+  {
+    name: 'Rafael Oyarce',
+    role: 'Dueño, El Coppa Pizzas Pucón',
+    content: 'Con Jafir logramos que nuestras promociones llegaran a mucho más público en redes sociales. La campaña fue directa, entretenida y nos permitió aumentar los pedidos en el local y el delivery.',
+    rating: 5
+  },
+  {
+    name: 'Claudia Calfio',
+    role: 'Dueña, Zei Sushi Temuco',
+    content: 'El equipo de Jafir entendió perfecto cómo comunicar nuestra propuesta. Gracias a sus ideas creativas, logramos más visibilidad y nuevos clientes que nunca nos habían probado.',
+    rating: 5
+  },
+  {
+    name: 'Cristóbal Bravo',
+    role: 'Director de Turismo, Villarrica',
+    content: 'El trabajo con Jafir nos ayudó a mostrar la identidad de nuestra comuna de una manera fresca y atractiva. Supieron transmitir lo que queremos proyectar como destino turístico.',
+    rating: 5
+  },
+  {
+    name: 'Claudio Bielefeldt',
+    role: 'Dueño, Mohr Delikatessen Temuco',
+    content: 'Con el apoyo de Jafir pudimos posicionar nuestros productos gourmet en redes sociales de forma mucho más profesional. Las publicaciones generaron interacción real y nos hicieron conocidos fuera de Temuco.',
+    rating: 5
+  }
+];
 
   // Auto-rotate testimonials
   useEffect(() => {
