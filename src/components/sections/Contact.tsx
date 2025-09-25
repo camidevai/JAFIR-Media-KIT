@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser'
 import { Send, CheckCircle, AlertCircle, Mail, Phone, MapPin } from 'lucide-react'
 import Button from '../ui/Button'
 import RiseIn from '../motion/RiseIn'
+import { EMAILJS_CONFIG } from '../../config/emailjs'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -28,18 +29,19 @@ const Contact = () => {
     setSubmitStatus('idle')
 
     try {
-      // Replace with your EmailJS configuration
+      // EmailJS Configuration - Jafir Torres
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your service ID
-        'YOUR_TEMPLATE_ID', // Replace with your template ID
+        EMAILJS_CONFIG.SERVICE_ID,
+        EMAILJS_CONFIG.TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
           brand: formData.brand,
           message: formData.message,
-          to_name: 'Jafir Torres'
+          to_name: 'Jafir Torres',
+          reply_to: formData.email
         },
-        'YOUR_PUBLIC_KEY' // Replace with your public key
+        EMAILJS_CONFIG.PUBLIC_KEY
       )
 
       setSubmitStatus('success')
@@ -56,19 +58,19 @@ const Contact = () => {
     {
       icon: <Mail size={24} />,
       label: 'Email',
-      value: 'hola@jafirtorres.com',
-      href: 'mailto:hola@jafirtorres.com'
+      value: 'Jafirjafirt@gmail.com',
+      href: 'mailto:Jafirjafirt@gmail.com'
     },
     {
       icon: <Phone size={24} />,
       label: 'WhatsApp',
-      value: '+56 9 1234 5678',
-      href: 'https://wa.me/56912345678'
+      value: '+56 9 9289 3620',
+      href: 'https://wa.me/56992893620'
     },
     {
       icon: <MapPin size={24} />,
       label: 'Ubicación',
-      value: 'Santiago, Chile',
+      value: 'Temuco, Chile',
       href: null
     }
   ]

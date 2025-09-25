@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Contacto - Jafir Torres</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #E11D48 0%, #7C3AED 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .field {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #E11D48;
+        }
+        
+        .field-label {
+            font-weight: bold;
+            color: #E11D48;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        
+        .field-value {
+            font-size: 16px;
+            color: #333;
+            word-wrap: break-word;
+        }
+        
+        .message-field {
+            background: #fff;
+            border: 2px solid #f0f0f0;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .message-field .field-value {
+            white-space: pre-wrap;
+            line-height: 1.8;
+        }
+        
+        .footer {
+            background: #0B0F14;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .footer h3 {
+            color: #22D3EE;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #E11D48, #7C3AED);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                border-radius: 8px;
+            }
+            
+            .header, .content, .footer {
+                padding: 20px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🎬 Nuevo Contacto</h1>
+            <p>Solicitud de colaboración recibida</p>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <div class="field">
+                <div class="field-label">👤 Nombre</div>
+                <div class="field-value">{{from_name}}</div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">📧 Email</div>
+                <div class="field-value">{{from_email}}</div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">🏢 Marca/Empresa</div>
+                <div class="field-value">{{brand}}</div>
+            </div>
+            
+            <div class="field message-field">
+                <div class="field-label">💬 Mensaje</div>
+                <div class="field-value">{{message}}</div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <h3>Jafir Torres</h3>
+            <p>Creador de contenido viral • Humor que vende, calle que conecta</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    📧 Jafirjafirt@gmail.com
+                </div>
+                <div class="contact-item">
+                    📱 +56 9 9289 3620
+                </div>
+                <div class="contact-item">
+                    📍 Temuco, Chile
+                </div>
+            </div>
+            
+            <p style="margin-top: 20px; font-size: 12px; opacity: 0.7;">
+                Este email fue enviado desde la landing page oficial de Jafir Torres
+            </p>
+        </div>
+    </div>
+</body>
+</html>
