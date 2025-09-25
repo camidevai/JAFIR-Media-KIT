@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Instagram, TrendingUp } from 'lucide-react'
+import { Eye, TrendingUp } from 'lucide-react'
 import Button from '../ui/Button'
 import Badge from '../ui/Badge'
 import StatPill from '../ui/StatPill'
@@ -61,14 +61,14 @@ const Hero = () => {
               {/* Stats */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
                 <StatPill
-                  icon={<Instagram size={24} />}
-                  value="976K"
-                  label="IG Views/90d"
+                  icon={<Eye size={24} />}
+                  value={2820129}
+                  label="Views últimos 30 días"
                 />
                 <StatPill
                   icon={<TrendingUp size={24} />}
-                  value="17.4M"
-                  label="TikTok Views/8sem"
+                  value={1356867}
+                  label="Cuentas alcanzadas"
                 />
               </div>
 

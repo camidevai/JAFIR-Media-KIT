@@ -90,7 +90,7 @@ await emailjs.send(
 
 - **Instagram:** [@jafirtorres](https://instagram.com/jafirtorres)
 - **TikTok:** [@jafirtorres](https://tiktok.com/@jafirtorres)
-- **Email:** hola@jafirtorres.com
+- **Email:** Jafirjafirt@gmail.com
 
 ---
 

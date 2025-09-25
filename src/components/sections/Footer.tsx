@@ -112,9 +112,9 @@ const Footer = () => {
             >
               <h4 className="text-lg font-semibold text-text mb-4">Contacto</h4>
               <div className="space-y-2 text-muted">
-                <p>hola@jafirtorres.com</p>
-                <p>+56 9 1234 5678</p>
-                <p>Santiago, Chile</p>
+                <p>Jafirjafirt@gmail.com</p>
+                <p>+56 9 9289 3620</p>
+                <p>Temuco, Chile</p>
               </div>
             </motion.div>
           </div>

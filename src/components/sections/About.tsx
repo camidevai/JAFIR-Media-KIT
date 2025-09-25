@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Video, Mic, Users } from 'lucide-react'
 import RiseIn from '../motion/RiseIn'
 import ScaleIn from '../motion/ScaleIn'
+import SimpleCounter from '../ui/SimpleCounter'
 
 const About = () => {
   const features = [
@@ -23,10 +24,10 @@ const About = () => {
   ]
 
   const achievements = [
-    { number: '976K', label: 'Views mensuales IG' },
-    { number: '17.4M', label: 'Views TikTok 8 semanas' },
-    { number: '50+', label: 'Marcas trabajadas' },
-    { number: '95%', label: 'Clientes satisfechos' }
+    { number: 2820129, label: 'Views últimos 30 días', suffix: '' },
+    { number: 1356867, label: 'Cuentas alcanzadas', suffix: '' },
+    { number: 92, label: 'Engagement rate', suffix: '%' },
+    { number: 50, label: 'Marcas trabajadas', suffix: '+' }
   ]
 
   return (
@@ -90,9 +91,12 @@ const About = () => {
                   transition={{ delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">
-                    {achievement.number}
-                  </div>
+                  <SimpleCounter
+                    end={achievement.number}
+                    delay={index * 200}
+                    suffix={achievement.suffix}
+                    className="text-3xl md:text-4xl font-bold text-gradient mb-2"
+                  />
                   <div className="text-sm text-muted">{achievement.label}</div>
                 </motion.div>
               ))}

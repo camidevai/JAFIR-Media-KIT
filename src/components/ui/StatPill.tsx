@@ -1,14 +1,16 @@
 import { ReactNode } from 'react'
 import { motion } from 'framer-motion'
+import SimpleCounter from './SimpleCounter'
 
 interface StatPillProps {
   icon: ReactNode
-  value: string
+  value: number
   label: string
+  suffix?: string
   className?: string
 }
 
-const StatPill = ({ icon, value, label, className = '' }: StatPillProps) => {
+const StatPill = ({ icon, value, label, suffix = '', className = '' }: StatPillProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -20,7 +22,12 @@ const StatPill = ({ icon, value, label, className = '' }: StatPillProps) => {
         {icon}
       </div>
       <div>
-        <div className="text-xl font-bold text-gradient">{value}</div>
+        <SimpleCounter
+          end={value}
+          delay={300}
+          suffix={suffix}
+          className="text-xl font-bold text-gradient"
+        />
         <div className="text-sm text-muted">{label}</div>
       </div>
     </motion.div>
