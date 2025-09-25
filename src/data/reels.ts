@@ -31,7 +31,7 @@ export const reelsData: ReelData[] = [
 
   // 🎬 CONTENIDO PROFESIONAL (Sketches y publicidad)
   {
-    views: 623000,
+    views: 2100000,
     title: 'Publicidad sketch',
     thumbnail: 'https://subir-imagen.com/images/2025/09/04/image444606324c0c6f87.png',
     url: 'https://vm.tiktok.com/ZMAMvpJmU/'
