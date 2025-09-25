@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion'
 import { Play, Eye } from 'lucide-react'
+import SimpleCounter from './SimpleCounter'
 
 interface ReelCardProps {
-  views: string
+  views: number
   title?: string
   thumbnail: string
   url: string
@@ -48,7 +49,11 @@ const ReelCard = ({ views, title, thumbnail, url, className = '' }: ReelCardProp
         {/* Views badge */}
         <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-sm rounded-full px-3 py-1 flex items-center gap-2">
           <Eye size={16} className="text-white" />
-          <span className="text-white text-sm font-semibold">{views}</span>
+          <SimpleCounter
+            end={views}
+            delay={100}
+            className="text-white text-sm font-semibold"
+          />
         </div>
 
         {/* Title overlay */}
