@@ -35,7 +35,6 @@ const PricingCard = ({
       
       <div className="text-center mb-6">
         <h3 className="heading-md mb-4">{title}</h3>
-        <div className="text-4xl font-bold text-gradient mb-2">{price}</div>
       </div>
 
       <ul className="space-y-3 mb-8">
