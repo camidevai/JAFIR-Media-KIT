@@ -11,7 +11,6 @@ const Services = () => {
   const services = [
     {
       title: 'Sketch de humor + actuación',
-      price: 'CLP $100.000',
       bullets: [
         'Guion corto a medida para tu marca',
         'Grabación profesional + edición',
@@ -25,7 +24,6 @@ const Services = () => {
     },
     {
       title: 'Interacción en la calle con bromas',
-      price: 'CLP $100.000',
       bullets: [
         'Dinámica con público real',
         'Integración natural de marca',
@@ -92,7 +90,6 @@ const Services = () => {
             >
               <PricingCard
                 title={service.title}
-                price={service.price}
                 bullets={service.bullets}
                 cta={service.cta}
                 featured={service.featured}

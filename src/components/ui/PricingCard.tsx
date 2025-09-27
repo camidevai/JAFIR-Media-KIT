@@ -4,20 +4,18 @@ import Button from './Button'
 
 interface PricingCardProps {
   title: string
-  price: string
   bullets: string[]
   cta: string
   featured?: boolean
   onCtaClick?: () => void
 }
 
-const PricingCard = ({ 
-  title, 
-  price, 
-  bullets, 
-  cta, 
-  featured = false, 
-  onCtaClick 
+const PricingCard = ({
+  title,
+  bullets,
+  cta,
+  featured = false,
+  onCtaClick
 }: PricingCardProps) => {
   return (
     <motion.div
